@@ -1,0 +1,259 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ff7300;
+    color: #ff7403;
+}
+
+header {
+    background: rgb(255, 94, 0);
+    padding: 10px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2b2b2b;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #0025f7;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #da6200;
+    font-weight: 600;
+}
+
+.about-me {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-area {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-area h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d86014;
+    margin-bottom: 8px;
+}
+
+.text-area h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.text-area p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+#btn-portofolio {
+    background-color: #d86014;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-portofolio:hover {
+    background-color: #b04b0e;
+}
+
+.image-area {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.image-area img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0 10px 25px rgba(216, 96, 20, 0.3);
+}
+
+/* Decorative shapes */
+.decor-circle {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d86014;
+    border-radius: 50%;
+}
+
+.decor-star-1 {
+    position: absolute;
+    top: 70px;
+    right: -15px;
+    font-size: 22px;
+    color: #d86014;
+}
+
+.decor-star-2 {
+    position: absolute;
+    bottom: 130px;
+    right: 70px;
+    font-size: 22px;
+    color: #d86014;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 15px 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    font-weight: 700;
+    color: #e67104;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    user-select: none;
+    color: #ee2a23;
+}
+
+.linkedin-icon i {
+    color: #006edb;
+}
+.linkedin-icon i {
+    color: white;
+}
+
+.social-icons a:hover {
+    color: green;
+    cursor: pointer;
+}
+.experience {
+    max-width: 900px;
+    margin: 60px auto 40px auto;
+    padding: 0 20px;
+}
+
+.experience h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.experience-item {
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    transition: box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 6px 18px rgba(216, 96, 20, 0.3);
+}
+
+.experience-item h3 {
+    font-weight: 600;
+    color: #d86014;
+    margin-bottom: 6px;
+}
+
+.experience-item .date {
+    font-size: 13px;
+    color: #8a8a8a;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.experience-item p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+.btn-unduh-cv {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-unduh-cv:hover {
+    background-color: #0056b3;
+}
+
+.icon-unduh {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
